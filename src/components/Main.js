@@ -395,11 +395,12 @@ const SharedActor = styled(CommonCard)`
 `;
 
 const Description = styled.div`
-  padding: 0 16px;
+  padding: 4px 16px;
   overflow: hidden;
   color: rgba(0, 0, 0.9);
   text-align: left;
   font-size: 16px;
+  line-height: 1.5;
 `;
 
 const SharedImage = styled.div`
