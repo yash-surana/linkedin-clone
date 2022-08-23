@@ -11,10 +11,10 @@ const Login = (props) => {
         <a href="/">
           <img src="/images/login-logo.svg" alt="" />
         </a>
-        <div>
+        <LoginNav>
           <Join>Join Now</Join>
           <SignIn>Sign In</SignIn>
-        </div>
+        </LoginNav>
       </Nav>
       <Section>
         <Hero>
@@ -47,13 +47,25 @@ const Nav = styled.div`
   position: relative;
   padding: 12px 0 16px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   & > a {
     width: 135px;
     height: 34px;
     @media (max-width: 768px) {
       padding: 0 5px;
+      /* width: 50px; */
     }
   }
+`;
+
+const LoginNav = styled(Nav)`
+  /* @media (max-width:768px){
+    display: flex;
+    justify-content
+  } */
 `;
 
 const Join = styled.div`
