@@ -13,7 +13,7 @@ const Login = (props) => {
         </a>
         <LoginNav>
           <Join>Join Now</Join>
-          <SignIn>Sign In</SignIn>
+          <SignIn onClick={() => props.signIn()}>Sign In</SignIn>
         </LoginNav>
       </Nav>
       <Section>
